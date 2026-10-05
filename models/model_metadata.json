@@ -1,0 +1,228 @@
+{
+    "dataset": "NASA CMAPSS Turbofan Engine FD001",
+    "training_date": "2026-10-05 19:15:35",
+    "training_duration_seconds": 18.66,
+    "total_train_rows": 20631,
+    "total_test_units": 100,
+    "num_features": 87,
+    "feature_names": [
+        "op_setting_1",
+        "op_setting_2",
+        "op_setting_3",
+        "sensor_2",
+        "sensor_3",
+        "sensor_4",
+        "sensor_7",
+        "sensor_8",
+        "sensor_9",
+        "sensor_11",
+        "sensor_12",
+        "sensor_13",
+        "sensor_14",
+        "sensor_15",
+        "sensor_17",
+        "sensor_20",
+        "sensor_21",
+        "sensor_2_roll_mean_5",
+        "sensor_2_roll_std_5",
+        "sensor_3_roll_mean_5",
+        "sensor_3_roll_std_5",
+        "sensor_4_roll_mean_5",
+        "sensor_4_roll_std_5",
+        "sensor_7_roll_mean_5",
+        "sensor_7_roll_std_5",
+        "sensor_8_roll_mean_5",
+        "sensor_8_roll_std_5",
+        "sensor_9_roll_mean_5",
+        "sensor_9_roll_std_5",
+        "sensor_11_roll_mean_5",
+        "sensor_11_roll_std_5",
+        "sensor_12_roll_mean_5",
+        "sensor_12_roll_std_5",
+        "sensor_13_roll_mean_5",
+        "sensor_13_roll_std_5",
+        "sensor_14_roll_mean_5",
+        "sensor_14_roll_std_5",
+        "sensor_15_roll_mean_5",
+        "sensor_15_roll_std_5",
+        "sensor_17_roll_mean_5",
+        "sensor_17_roll_std_5",
+        "sensor_20_roll_mean_5",
+        "sensor_20_roll_std_5",
+        "sensor_21_roll_mean_5",
+        "sensor_21_roll_std_5",
+        "sensor_2_roll_mean_15",
+        "sensor_2_roll_std_15",
+        "sensor_3_roll_mean_15",
+        "sensor_3_roll_std_15",
+        "sensor_4_roll_mean_15",
+        "sensor_4_roll_std_15",
+        "sensor_7_roll_mean_15",
+        "sensor_7_roll_std_15",
+        "sensor_8_roll_mean_15",
+        "sensor_8_roll_std_15",
+        "sensor_9_roll_mean_15",
+        "sensor_9_roll_std_15",
+        "sensor_11_roll_mean_15",
+        "sensor_11_roll_std_15",
+        "sensor_12_roll_mean_15",
+        "sensor_12_roll_std_15",
+        "sensor_13_roll_mean_15",
+        "sensor_13_roll_std_15",
+        "sensor_14_roll_mean_15",
+        "sensor_14_roll_std_15",
+        "sensor_15_roll_mean_15",
+        "sensor_15_roll_std_15",
+        "sensor_17_roll_mean_15",
+        "sensor_17_roll_std_15",
+        "sensor_20_roll_mean_15",
+        "sensor_20_roll_std_15",
+        "sensor_21_roll_mean_15",
+        "sensor_21_roll_std_15",
+        "sensor_2_diff_5",
+        "sensor_3_diff_5",
+        "sensor_4_diff_5",
+        "sensor_7_diff_5",
+        "sensor_8_diff_5",
+        "sensor_9_diff_5",
+        "sensor_11_diff_5",
+        "sensor_12_diff_5",
+        "sensor_13_diff_5",
+        "sensor_14_diff_5",
+        "sensor_15_diff_5",
+        "sensor_17_diff_5",
+        "sensor_20_diff_5",
+        "sensor_21_diff_5"
+    ],
+    "models": {
+        "xgboost": {
+            "file": "xgboost_rul_model.joblib",
+            "metrics": {
+                "rmse": 18.78,
+                "mae": 13.89,
+                "r2": 0.7958,
+                "cmapss_score": 854.9,
+                "accuracy_pct": 75.24
+            },
+            "top_features": [
+                {
+                    "feature": "sensor_4_roll_mean_5",
+                    "importance": 0.37328648567199707,
+                    "importance_pct": 46.7088623046875
+                },
+                {
+                    "feature": "sensor_3_roll_mean_15",
+                    "importance": 0.10529032349586487,
+                    "importance_pct": 13.174843788146973
+                },
+                {
+                    "feature": "sensor_11_roll_mean_5",
+                    "importance": 0.0979292169213295,
+                    "importance_pct": 12.253758430480957
+                },
+                {
+                    "feature": "sensor_15_roll_mean_5",
+                    "importance": 0.07514136284589767,
+                    "importance_pct": 9.402342796325684
+                },
+                {
+                    "feature": "sensor_4_roll_mean_15",
+                    "importance": 0.04630725830793381,
+                    "importance_pct": 5.794368267059326
+                },
+                {
+                    "feature": "sensor_9_roll_mean_5",
+                    "importance": 0.036920856684446335,
+                    "importance_pct": 4.61985969543457
+                },
+                {
+                    "feature": "sensor_9",
+                    "importance": 0.02030964195728302,
+                    "importance_pct": 2.5413196086883545
+                },
+                {
+                    "feature": "sensor_2_roll_mean_5",
+                    "importance": 0.017257150262594223,
+                    "importance_pct": 2.159365177154541
+                },
+                {
+                    "feature": "sensor_9_roll_mean_15",
+                    "importance": 0.014602654613554478,
+                    "importance_pct": 1.827211618423462
+                },
+                {
+                    "feature": "sensor_20_roll_mean_5",
+                    "importance": 0.012132025323808193,
+                    "importance_pct": 1.5180649757385254
+                }
+            ]
+        },
+        "random_forest": {
+            "file": "random_forest_rul_model.joblib",
+            "metrics": {
+                "rmse": 19.89,
+                "mae": 14.37,
+                "r2": 0.771,
+                "cmapss_score": 1370.7,
+                "accuracy_pct": 73.26
+            },
+            "top_features": [
+                {
+                    "feature": "sensor_4_roll_mean_5",
+                    "importance": 0.5741295389269337,
+                    "importance_pct": 67.83040615657094
+                },
+                {
+                    "feature": "sensor_9_roll_mean_5",
+                    "importance": 0.0723767009551843,
+                    "importance_pct": 8.550929170511834
+                },
+                {
+                    "feature": "sensor_11_roll_mean_5",
+                    "importance": 0.06484172244188634,
+                    "importance_pct": 7.660710816839771
+                },
+                {
+                    "feature": "sensor_3_roll_mean_15",
+                    "importance": 0.04770854556396441,
+                    "importance_pct": 5.636515460938191
+                },
+                {
+                    "feature": "sensor_4_roll_mean_15",
+                    "importance": 0.023665687208415113,
+                    "importance_pct": 2.795977329996697
+                },
+                {
+                    "feature": "sensor_9_roll_mean_15",
+                    "importance": 0.021936248890668402,
+                    "importance_pct": 2.5916532261807714
+                },
+                {
+                    "feature": "sensor_14_roll_mean_15",
+                    "importance": 0.013810820674127505,
+                    "importance_pct": 1.6316763241837937
+                },
+                {
+                    "feature": "sensor_21_roll_mean_15",
+                    "importance": 0.012536588945085324,
+                    "importance_pct": 1.4811325011293932
+                },
+                {
+                    "feature": "sensor_15_roll_mean_15",
+                    "importance": 0.008458601037466807,
+                    "importance_pct": 0.9993395305180142
+                },
+                {
+                    "feature": "sensor_20_roll_mean_15",
+                    "importance": 0.006954683112405401,
+                    "importance_pct": 0.8216594831305811
+                }
+            ]
+        }
+    },
+    "anomaly_clusters": {
+        "2": "Healthy (Nominal)",
+        "0": "Degrading (Advisory)",
+        "1": "Critical (Failure Imminent)"
+    }
+}

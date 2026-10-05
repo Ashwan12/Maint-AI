@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# Data cache (keep raw/samples/models)
+data/processed/*.parquet
+
+# OS specific
+.DS_Store
+Thumbs.db
+
